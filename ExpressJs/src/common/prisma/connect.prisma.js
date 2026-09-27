@@ -20,7 +20,7 @@ try {
     await prisma.$queryRaw`SELECT 1 + 1 AS result`;
     console.log("✅ [PRISMA] Connection has been established successfully.");
 } catch (error) {
-    console.error("❌ [SEQUELIZE]  Unable to connect to the database:", error);
+    console.error("❌ [PRISMA]  Unable to connect to the database:", error);
 }
 
 export { prisma };
